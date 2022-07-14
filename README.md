@@ -1,16 +1,16 @@
-#3813ICT HTTP server setup.
+# 3813ICT HTTP server setup.
 
-##install
+## install
 
 1. Generate a SSL certificate in the elf terminal.
-    > openssl genrsa -out key.pem
-    > openssl req -new -key key.pem -out csr.pem
-    > openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
-    > rm csr.pem
+     openssl genrsa -out key.pem
+     openssl req -new -key key.pem -out csr.pem
+     openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+     rm csr.pem
 
 The key.pem and cert.pem files will reside in same folder as the server.js file.
 2. Load dependencies  
-    > npm install  - to load the required node module deprendencies.
+     npm install  - to load the required node module deprendencies.
 
 3. Run
     node server.js
